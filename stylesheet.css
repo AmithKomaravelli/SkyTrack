@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+}
+
+.navbar-title{
+    padding-left: 3px;
+}
+
+.btn:hover{
+    transition: all .03s ease-in-out;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #0d6efd;
+    transition: all .03s ease-in-out;
+}
