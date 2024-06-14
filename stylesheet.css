@@ -19,6 +19,56 @@
     padding-left: 3px;
 }
 
+.switch {
+    margin-left: 10px;
+    font-size: 17px;
+    position: relative;
+    display: inline-flex;
+    width: 2em;
+    height: 1.4em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(204, 204, 204);
+    box-shadow: inset 1.8px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.9em;
+    width: 0.1em;
+    border-radius: 0px;
+    top: 0.2em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(48, 52, 52);
+    box-shadow: inset 1.8px 3px 6px rgb(0, 0 ,0, 0.5);
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.1em) rotate(360deg);
+}
+
 .btn:hover{
     transition: all .03s ease-in-out;
 }
